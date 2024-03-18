@@ -7,7 +7,7 @@ body {
 }
 
 h1 {
-    color: #000000;
+    color: #FFFFFF;
     margin-top: 20px;
 }
 
@@ -47,7 +47,7 @@ ul {
 }
 
 li {
-    background-color: #000000;
+    background-color: #FFFFFF;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     padding: 20px;
