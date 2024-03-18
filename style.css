@@ -1,13 +1,13 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #000000;
+    background-color: #6A5ACD;
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
 h1 {
-    color: #000000;
+    color: #2a2727;
     margin-top: 20px;
 }
 
@@ -47,7 +47,7 @@ ul {
 }
 
 li {
-    background-color: #000000;
+    background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     padding: 20px;
