@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loja de Jogos</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+  <nav>
+    <ul>
+        <li><a href="#area">Área do usuário</a></li>
+        <li><a href="#biblioteca">Biblioteca</a></li>
+        <li><a href="#forum">Fórum</a></li>
+        <li><a href="#suporte">Suporte</a></li>
+    </ul>
+</nav>
+</body>
+<h1>Loja de Jogos</h1>
+
+<div>
+  <label for="option">Escolha uma opção:</label>
+  <select id="option">
+    <option value="1">Jogos listados por ordem alfabética</option>
+    <option value="2">Jogos listados por mais comprados</option>
+    <option value="3">Jogos listados por maior avaliação</option>
+    <option value="4">Jogos listados por categoria/gênero</option>
+  </select>
+  <input type="text" id="category" placeholder="Digite a categoria">
+  <button onclick="showGames()">Mostrar Jogos</button>
+</div>
+
+<ul id="gamesList">
+  <li>
+    <img src="../iara-games-main\loja\chroma.jpg" alt="Chroma Squad">
+    <span class="game-info">
+      <strong>Chroma Squad</strong><br>
+      É um jogo de estratégia tática com elementos de RPG que coloca os jogadores no controle de um grupo de dublês que decide criar seu próprio programa de TV inspirado em super-heróis. Os jogadores devem gerenciar sua equipe, escolher habilidades, criar seus próprios trajes e equipamentos, e realizar missões cheias de ação para criar o melhor programa possível. Com uma mistura de humor e referências à cultura pop, "Chroma Squad" oferece uma experiência divertida e cativante para os fãs de estratégia e RPG.
+      <br>
+      <a href="https://youtu.be/Y1KQhuJgxUs?si=XjSNMBpz7YkA7FMX" target="_blank">Assista ao vídeo</a>
+    </span>
+  </li>
+  <li>
+    <img src="../iara-games-main\loja\dandara.jpg" alt="Dandara">
+    <span class="game-info">
+      <strong>Dandara</strong><br>
+      É um jogo de plataforma de ação que se passa em um mundo surreal inspirado na cultura brasileira e na figura histórica de Dandara dos Palmares. No jogo, os jogadores assumem o papel de Dandara, uma guerreira que desafia a opressão e a tirania, utilizando habilidades de salto e gravidade para explorar os ambientes não lineares e derrotar inimigos. Com visuais estilizados e uma trilha sonora envolvente, o jogo oferece uma experiência única e cativante.
+      <br>
+      <a href="https://youtu.be/o55q0wqId0c?si=aASTDGRVzNgyWmBw" target="_blank">Assista ao vídeo</a>
+    </span>
+  </li>
+  <li>
+    <img src="../iara-games-main\loja\horizon.jpg" alt="Horizon Chase Turbo">
+    <span class="game-info">
+      <strong>Horizon Chase Turbo</strong><br>
+      É um jogo de corrida arcade inspirado nos clássicos jogos de corrida dos anos 80 e 90. Os jogadores competem em diversas pistas ao redor do mundo, com visuais vibrantes e trilhas sonoras eletrizantes. Com controles simples e jogabilidade rápida, os jogadores podem desfrutar de corridas solo ou competir contra amigos em modo multiplayer local. Com gráficos nostálgicos e uma jogabilidade acessível, "Horizon Chase Turbo" é uma celebração da era dourada dos jogos de corrida.
+      <br>
+      <a href="https://www.youtube.com/watch?v=UR-y_1w3DwA" target="_blank">Assista ao vídeo</a>
+    </span>
+  </li>
+  <li>
+    <img src="../iara-games-main\loja\unsighted.jpg" alt="Unsighted">
+    <span class="game-info">
+      <strong>Unsighted</strong><br>
+      É um jogo de ação e aventura com elementos de RPG e quebra-cabeças, situado em um mundo futurista onde os androides, chamados "unsighted", estão perdendo sua fonte de energia e emoção. Os jogadores assumem o papel de Alma, uma androide com amnésia, que deve explorar um mundo interconectado, resolver quebra-cabeças, lutar contra inimigos e interagir com diversos personagens para desvendar os segredos por trás da crise dos unsighted. Com visuais pixelizados e uma atmosfera envolvente, "Unsighted" oferece uma experiência imersiva e emocionante para os fãs de jogos de aventura.
+      <br>
+      <a href="https://m.youtube.com/watch?v=I1LZTq7W1Fk&embeds_referring_euri=https%3A%2F%2Fwww.gamecoin.com.br%2F&feature=emb_imp_woyt" target="_blank">Assista ao vídeo</a>
+    </span>
+  </li>
+  <li>
+    <img src="../iara-games-main\loja\panzito.jpg" alt="Panzito">
+    <span class="game-info">
+      <strong>Pãozito</strong><br>
+      É um jogo casual e divertido onde os jogadores assumem o papel de um pão em uma jornada para se tornar o melhor pão da padaria. O objetivo é percorrer diferentes níveis desviando de obstáculos, coletando ingredientes e evitando ser comido pelos clientes. Com controles simples e uma jogabilidade viciante, os jogadores podem desfrutar de desafios crescentes e conquistas ao longo do caminho. Com gráficos coloridos e uma trilha sonora cativante, "Pãozito" oferece uma experiência relaxante e divertida para jogadores de todas as idades.
+      <br>
+      <a href="https://youtu.be/oPK3Qyoots8?si=3WVU1kRkFZ-Ds4cU" target="_blank">Assista ao vídeo</a>
+    </span>
+  </li>
+  <li>
+    <img src="../iara-games-main\loja\hazel sky.jpg" alt="Hazel Sky">
+    <span class="game-info">
+      <strong>Hazel Sky</strong><br>
+      É um jogo de aventura e exploração onde os jogadores assumem o papel de Shane, um aprendiz de inventor em uma ilha flutuante. Shane deve completar uma série de desafios e testes de invenção para se tornar um verdadeiro inventor e ganhar sua liberdade. No entanto, ao longo do caminho, ele descobre segredos sombrios sobre sua própria família e o mundo ao seu redor. Com uma história envolvente, visuais vibrantes e quebra-cabeças desafiadores, "Hazel Sky" oferece uma experiência emocionante e memorável para os fãs de jogos de aventura.
+      <br>
+      <a href="https://youtu.be/EkE79gX3wXM?si=YUDCnQr8B-_lfSUH" target="_blank">Assista ao vídeo</a>
+    </span>
+  </li>
+  <li>
+    <img src="../iara-games-main/loja/fobia.jpg" alt="Fobia">
+    <span class="game-info">
+      <strong>Fobia- st. dinfna hotel</strong><br>
+      É um jogo de terror psicológico que mergulha os jogadores em um mundo surreal e assustador. O jogo coloca os jogadores no papel de um personagem preso em uma cidade distorcida e ameaçadora, onde devem enfrentar seus medos mais profundos para sobreviver e descobrir a verdade por trás do mistério que envolve o local. Com atmosfera tensa, quebra-cabeças desafiadores e inimigos aterrorizantes, "Fobia" oferece uma experiência de jogo imersiva e arrepiante para os fãs do gênero de terror.
+      <br>
+      <a href="https://youtu.be/VrpL2S9kRvo?si=Q4COGL-n32LywJCO" target="_blank">Assista ao vídeo</a>
+    </span>
+  </li>
+  <li>
+    <img src="../iara-games-main\loja\dandy ace.jpg" alt="Dandy Ace">
+    <span class="game-info">
+      <strong>Dandy Ace</strong><br>
+      É um jogo de ação e aventura roguelike onde os jogadores assumem o papel de Ace, um ilusionista preso em um espelho mágico pelo maligno mago Lele. O objetivo é escapar do espelho explorando masmorras geradas aleatoriamente, derrotando inimigos e chefes desafiadores, e coletando cartas mágicas para aprimorar suas habilidades. Com mecânicas de combate rápidas e fluidas, uma variedade de cartas para experimentar e visuais vibrantes, "Dandy Ace" oferece uma experiência empolgante e cativante para os fãs de jogos roguelike.
+      <br>
+      <a href="https://youtu.be/gto3iXpa4H4?si=OJtGU2LS5TcrrFCd" target="_blank">Assista ao vídeo</a>
+    </span>
+  </li>
+  <li>
+    <img src="../iara-games-main\loja\agar.io.jpg" alt="Agar.io">
+    <span class="game-info">
+      <strong>Agar.io</strong><br>
+      É um jogo online multiplayer em que os jogadores controlam uma célula em um mapa bidimensional. O objetivo é crescer ao comer células menores e outros jogadores, enquanto se esquivam de células maiores que tentam devorá-los. Com uma jogabilidade simples e viciante, "Agar.io" atraiu milhões de jogadores em todo o mundo desde o seu lançamento, oferecendo competição rápida e intensa em tempo real.Foi um jogo que fez parte da vida de muitas pessoas.
+      <br>
+      <a href="https://youtu.be/iKMVbNmcebs?si=JW99bzlAKpmdMePF" target="_blank">Assista ao vídeo</a>
+    </span>
+  </li>
+</ul>
+
+
+</html>
